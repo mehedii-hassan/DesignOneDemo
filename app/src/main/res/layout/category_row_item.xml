@@ -7,19 +7,23 @@
     </data>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="200dp"
+        android:id="@+id/cvTopId"
+        android:layout_width="169dp"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_card_design">
 
             <ImageView
                 android:id="@+id/ivLove"
-                android:layout_width="27dp"
-                android:layout_height="27dp"
-                android:src="@drawable/favourite"
+                android:layout_width="17dp"
+                android:layout_height="16dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/heart"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,14 +37,44 @@
                 app:layout_constraintTop_toBottomOf="@+id/ivLove" />
 
             <TextView
+                android:id="@+id/tvFruitName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:text="Pomegranat"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/ivCategory"
                 app:layout_constraintStart_toStartOf="@id/ivCategory"
                 app:layout_constraintTop_toBottomOf="@id/ivCategory" />
+
+            <ImageView
+                android:id="@+id/ivPrice"
+                android:layout_width="51dp"
+                android:layout_height="15dp"
+                android:src="@drawable/price"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFruitName" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/custom_card_bottom_design"
+                app:contentPadding="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivPrice">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add to cart"
+                    android:textColor="#48B749" />
+
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
+
 </layout>

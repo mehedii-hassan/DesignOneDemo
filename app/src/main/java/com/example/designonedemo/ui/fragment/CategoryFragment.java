@@ -29,13 +29,16 @@ public class CategoryFragment extends Fragment {
         //initialization
         binding = FragmentCategoryBinding.inflate(inflater, container, false);
 
-        int[] categoryImages = {R.drawable.bedena,
-                R.drawable.broccoli, R.drawable.bedena,
-                R.drawable.broccoli, R.drawable.bedena,
-                R.drawable.broccoli, R.drawable.bedena,
-                R.drawable.broccoli, R.drawable.bedena};
+        int[] categoryImages = {
+                R.drawable.bedena,
+                R.drawable.broccoli,
+                R.drawable.apple_green,
+                R.drawable.yellow,
+                R.drawable.rer,
+                R.drawable.yellow};
+        String[] fruitName = getResources().getStringArray(R.array.FruitNames);
 
-        CategoryAdapter adapter = new CategoryAdapter(categoryImages);
+        CategoryAdapter adapter = new CategoryAdapter(categoryImages, fruitName);
         binding.rvCategory.setLayoutManager(new GridLayoutManager(container.getContext(), 2));
         binding.rvCategory.setAdapter(adapter);
 

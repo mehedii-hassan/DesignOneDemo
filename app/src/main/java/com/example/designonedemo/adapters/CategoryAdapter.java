@@ -12,9 +12,11 @@ import com.example.designonedemo.databinding.CategoryRowItemBinding;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
 
     private int[] categoryImages;
+    private String[] names;
 
-    public CategoryAdapter(int[] categoryImages) {
+    public CategoryAdapter(int[] categoryImages, String[] names) {
         this.categoryImages = categoryImages;
+        this.names = names;
     }
 
     @NonNull
@@ -29,6 +31,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
 
         holder.binding.ivCategory.setImageResource(categoryImages[position]);
+        holder.binding.tvFruitName.setText(names[position]);
     }
 
     @Override

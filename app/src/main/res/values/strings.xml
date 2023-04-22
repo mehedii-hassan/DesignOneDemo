@@ -30,4 +30,13 @@
     </string-array>
 
 
+    <string-array name="FruitNames">
+        <item>Pomegranat</item>
+        <item>Boroccoli flower</item>
+        <item>Green Apple</item>
+        <item>Capsicum</item>
+        <item>Red Capsicum</item>
+        <item>Capsicum</item>
+    </string-array>
+
 </resources>
