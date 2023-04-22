@@ -3,11 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/splashScreenFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/splashScreenFragment"
-        android:name="com.example.designonedemo.SplashScreenFragment"
+        android:name="com.example.designonedemo.ui.fragment.SplashScreenFragment"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" />
+    <fragment
+        android:id="@+id/deliveryFragment"
+        android:name="com.example.designonedemo.ui.fragment.DeliveryFragment"
+        android:label="DeliveryFragment"
+        tools:layout="@layout/fragment_delivery" />
+    <fragment
+        android:id="@+id/bestGroceryFragment"
+        android:name="com.example.designonedemo.ui.fragment.BestGroceryFragment"
+        android:label="BestGroceryFragment"
+        tools:layout="@layout/fragment_best_grocery" />
+    <fragment
+        android:id="@+id/welcomeOneFragment"
+        android:name="com.example.designonedemo.ui.fragment.WelcomeOneFragment"
+        android:label="fragment_best_grocery"
+        tools:layout="@layout/fragment_welcome_one" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.designonedemo.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.designonedemo.ui.fragment.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
 </navigation>

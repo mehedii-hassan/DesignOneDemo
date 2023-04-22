@@ -2,4 +2,32 @@
     <string name="app_name">DesignOneDemo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text">Lorem ipsum is placeholder text commonly used in the graphic industries for previewing.</string>
+
+    <string-array name="ImageNames">
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Fish</item>
+        <item>Market</item>
+    </string-array>
+
+
+    <string-array name="Titles">
+        <item>Fruits and Vegetables</item>
+        <item>Groceries and Stapies</item>
+        <item>Household Needs</item>
+        <item>Mans and Womens Wear</item>
+        <item>Foot wear</item>
+    </string-array>
+
+    <string-array name="Descriptions">
+        <item>Lorem ipsum is placeholder text commonly used in the graphic industries for previewing.</item>
+        <item>Lorem ipsum is placeholder text commonly used in the graphic industries for previewing.</item>
+        <item>Lorem ipsum is placeholder text commonly used in the graphic industries for previewing.</item>
+        <item>Lorem ipsum is placeholder text commonly used in the graphic industries for previewing.</item>
+        <item>Lorem ipsum is placeholder text commonly used in the graphic industries for previewing.</item>
+
+    </string-array>
+
+
 </resources>

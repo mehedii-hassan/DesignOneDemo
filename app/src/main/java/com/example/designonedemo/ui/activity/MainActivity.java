@@ -1,8 +1,10 @@
-package com.example.designonedemo;
+package com.example.designonedemo.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.designonedemo.R;
 
 public class MainActivity extends AppCompatActivity {
 

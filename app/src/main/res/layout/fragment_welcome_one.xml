@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.WelcomeOneFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".08" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_290dp"
+            android:layout_height="@dimen/_77dp"
+            android:src="@drawable/welcometxt"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toTopOf="@id/glTop" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".94" />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_277dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/glEnd"
+            app:layout_constraintStart_toStartOf="@id/glStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Skip"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/glStart" />
+
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="13dp"
+            android:src="@drawable/group1"
+            app:layout_constraintBottom_toBottomOf="@id/tvSkip"
+            app:layout_constraintEnd_toStartOf="@id/glEnd"
+            app:layout_constraintTop_toTopOf="@id/tvSkip" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
