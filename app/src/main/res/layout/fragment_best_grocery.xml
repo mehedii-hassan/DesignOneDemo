@@ -23,7 +23,7 @@
             android:id="@+id/imageView"
             android:layout_width="@dimen/_295dp"
             android:layout_height="@dimen/_68dp"
-            android:src="@drawable/best_grocery"
+            android:src="@drawable/grocery"
             app:layout_constraintStart_toStartOf="@id/glStart"
             app:layout_constraintTop_toTopOf="@id/glTop" />
 
